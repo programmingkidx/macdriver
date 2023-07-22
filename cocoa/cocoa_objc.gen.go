@@ -527,6 +527,10 @@ void* NSComboBox_type_Alloc() {
 	return [NSComboBox
 		alloc];
 }
+void* NSPopUpButton_type_Alloc() {
+	return [NSPopUpButton
+		alloc];
+}
 void* NSColor_type_Alloc() {
 	return [NSColor
 		alloc];
@@ -5854,6 +5858,204 @@ void NSComboBox_inst_SetDelegate(void *id, void* value) {
 		setDelegate: value];
 }
 
+void NSPopUpButton_inst_AddItemWithTitle(void *id, void* title) {
+	[(NSPopUpButton*)id
+		addItemWithTitle: title];
+}
+
+void NSPopUpButton_inst_AddItemsWithTitles(void *id, void* itemTitles) {
+	[(NSPopUpButton*)id
+		addItemsWithTitles: itemTitles];
+}
+
+long NSPopUpButton_inst_IndexOfItem(void *id, void* item) {
+	return [(NSPopUpButton*)id
+		indexOfItem: item];
+}
+
+long NSPopUpButton_inst_IndexOfItemWithRepresentedObject(void *id, void* obj) {
+	return [(NSPopUpButton*)id
+		indexOfItemWithRepresentedObject: obj];
+}
+
+long NSPopUpButton_inst_IndexOfItemWithTag(void *id, long tag) {
+	return [(NSPopUpButton*)id
+		indexOfItemWithTag: tag];
+}
+
+long NSPopUpButton_inst_IndexOfItemWithTargetAndAction(void *id, void* target, void* actionSelector) {
+	return [(NSPopUpButton*)id
+		indexOfItemWithTarget: target
+		andAction: actionSelector];
+}
+
+long NSPopUpButton_inst_IndexOfItemWithTitle(void *id, void* title) {
+	return [(NSPopUpButton*)id
+		indexOfItemWithTitle: title];
+}
+
+void* NSPopUpButton_inst_InitWithFramePullsDown(void *id, NSRect buttonFrame, BOOL flag) {
+	return [(NSPopUpButton*)id
+		initWithFrame: buttonFrame
+		pullsDown: flag];
+}
+
+void NSPopUpButton_inst_InsertItemWithTitleAtIndex(void *id, void* title, long index) {
+	[(NSPopUpButton*)id
+		insertItemWithTitle: title
+		atIndex: index];
+}
+
+void* NSPopUpButton_inst_ItemAtIndex(void *id, long index) {
+	return [(NSPopUpButton*)id
+		itemAtIndex: index];
+}
+
+void* NSPopUpButton_inst_ItemTitleAtIndex(void *id, long index) {
+	return [(NSPopUpButton*)id
+		itemTitleAtIndex: index];
+}
+
+void* NSPopUpButton_inst_ItemWithTitle(void *id, void* title) {
+	return [(NSPopUpButton*)id
+		itemWithTitle: title];
+}
+
+void* NSPopUpButton_inst_ObjectValue(void *id) {
+	return [(NSPopUpButton*)id
+		objectValue];
+}
+
+void NSPopUpButton_inst_RemoveAllItems(void *id) {
+	[(NSPopUpButton*)id
+		removeAllItems];
+}
+
+void NSPopUpButton_inst_RemoveItemAtIndex(void *id, long index) {
+	[(NSPopUpButton*)id
+		removeItemAtIndex: index];
+}
+
+void NSPopUpButton_inst_RemoveItemWithTitle(void *id, void* title) {
+	[(NSPopUpButton*)id
+		removeItemWithTitle: title];
+}
+
+void NSPopUpButton_inst_SelectItem(void *id, void* item) {
+	[(NSPopUpButton*)id
+		selectItem: item];
+}
+
+void NSPopUpButton_inst_SelectItemAtIndex(void *id, long index) {
+	[(NSPopUpButton*)id
+		selectItemAtIndex: index];
+}
+
+BOOL NSPopUpButton_inst_SelectItemWithTag(void *id, long tag) {
+	return [(NSPopUpButton*)id
+		selectItemWithTag: tag];
+}
+
+void NSPopUpButton_inst_SelectItemWithTitle(void *id, void* title) {
+	[(NSPopUpButton*)id
+		selectItemWithTitle: title];
+}
+
+void NSPopUpButton_inst_SetImage(void *id, void* anImage) {
+	[(NSPopUpButton*)id
+		setImage: anImage];
+}
+
+void NSPopUpButton_inst_SetObjectValue(void *id, void* object) {
+	[(NSPopUpButton*)id
+		setObjectValue: object];
+}
+
+void NSPopUpButton_inst_SetTitle(void *id, void* string) {
+	[(NSPopUpButton*)id
+		setTitle: string];
+}
+
+void NSPopUpButton_inst_SynchronizeTitleAndSelectedItem(void *id) {
+	[(NSPopUpButton*)id
+		synchronizeTitleAndSelectedItem];
+}
+
+void* NSPopUpButton_inst_Init(void *id) {
+	return [(NSPopUpButton*)id
+		init];
+}
+
+BOOL NSPopUpButton_inst_PullsDown(void *id) {
+	return [(NSPopUpButton*)id
+		pullsDown];
+}
+
+void NSPopUpButton_inst_SetPullsDown(void *id, BOOL value) {
+	[(NSPopUpButton*)id
+		setPullsDown: value];
+}
+
+BOOL NSPopUpButton_inst_AutoenablesItems(void *id) {
+	return [(NSPopUpButton*)id
+		autoenablesItems];
+}
+
+void NSPopUpButton_inst_SetAutoenablesItems(void *id, BOOL value) {
+	[(NSPopUpButton*)id
+		setAutoenablesItems: value];
+}
+
+void* NSPopUpButton_inst_SelectedItem(void *id) {
+	return [(NSPopUpButton*)id
+		selectedItem];
+}
+
+void* NSPopUpButton_inst_TitleOfSelectedItem(void *id) {
+	return [(NSPopUpButton*)id
+		titleOfSelectedItem];
+}
+
+long NSPopUpButton_inst_IndexOfSelectedItem(void *id) {
+	return [(NSPopUpButton*)id
+		indexOfSelectedItem];
+}
+
+long NSPopUpButton_inst_SelectedTag(void *id) {
+	return [(NSPopUpButton*)id
+		selectedTag];
+}
+
+void* NSPopUpButton_inst_Menu(void *id) {
+	return [(NSPopUpButton*)id
+		menu];
+}
+
+void NSPopUpButton_inst_SetMenu(void *id, void* value) {
+	[(NSPopUpButton*)id
+		setMenu: value];
+}
+
+long NSPopUpButton_inst_NumberOfItems(void *id) {
+	return [(NSPopUpButton*)id
+		numberOfItems];
+}
+
+void* NSPopUpButton_inst_ItemArray(void *id) {
+	return [(NSPopUpButton*)id
+		itemArray];
+}
+
+void* NSPopUpButton_inst_ItemTitles(void *id) {
+	return [(NSPopUpButton*)id
+		itemTitles];
+}
+
+void* NSPopUpButton_inst_LastItem(void *id) {
+	return [(NSPopUpButton*)id
+		lastItem];
+}
+
 void* NSColor_inst_BlendedColorWithFractionOfColor(void *id, double fraction, void* color) {
 	return [(NSColor*)id
 		blendedColorWithFraction: fraction
@@ -9036,6 +9238,13 @@ func NSComboBox_Alloc() NSComboBox {
 	ret := C.NSComboBox_type_Alloc()
 
 	return NSComboBox_FromPointer(ret)
+}
+
+// NSPopUpButton_Alloc is undocumented.
+func NSPopUpButton_Alloc() NSPopUpButton {
+	ret := C.NSPopUpButton_type_Alloc()
+
+	return NSPopUpButton_FromPointer(ret)
 }
 
 // NSColor_Alloc is undocumented.
@@ -23020,6 +23229,539 @@ func (x gen_NSComboBox) SetDelegate(
 	)
 
 	return
+}
+
+type NSPopUpButtonRef interface {
+	Pointer() uintptr
+	Init_AsNSPopUpButton() NSPopUpButton
+}
+
+type gen_NSPopUpButton struct {
+	NSButton
+}
+
+func NSPopUpButton_FromPointer(ptr unsafe.Pointer) NSPopUpButton {
+	return NSPopUpButton{gen_NSPopUpButton{
+		NSButton_FromPointer(ptr),
+	}}
+}
+
+func NSPopUpButton_FromRef(ref objc.Ref) NSPopUpButton {
+	return NSPopUpButton_FromPointer(unsafe.Pointer(ref.Pointer()))
+}
+
+// AddItemWithTitle adds an item with the specified title to the end of the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1529500-additemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) AddItemWithTitle(
+	title string,
+) {
+	C.NSPopUpButton_inst_AddItemWithTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+	)
+
+	return
+}
+
+// AddItemsWithTitles adds multiple items to the end of the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1532518-additemswithtitles?language=objc for details.
+func (x gen_NSPopUpButton) AddItemsWithTitles(
+	itemTitles core.NSArrayRef,
+) {
+	C.NSPopUpButton_inst_AddItemsWithTitles(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(itemTitles),
+	)
+
+	return
+}
+
+// IndexOfItem returns the index of the specified menu item.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1529708-indexofitem?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfItem(
+	item NSMenuItemRef,
+) core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfItem(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(item),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// IndexOfItemWithRepresentedObject returns the index of the menu item that holds the specified represented object.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1533993-indexofitemwithrepresentedobject?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfItemWithRepresentedObject(
+	obj objc.Ref,
+) core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfItemWithRepresentedObject(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(obj),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// IndexOfItemWithTag returns the index of the menu item with the specified tag.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534140-indexofitemwithtag?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfItemWithTag(
+	tag core.NSInteger,
+) core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfItemWithTag(
+		unsafe.Pointer(x.Pointer()),
+		C.long(tag),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// IndexOfItemWithTargetAndAction returns the index of the menu item with the specified target and action.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535747-indexofitemwithtarget?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfItemWithTargetAndAction(
+	target objc.Ref,
+	actionSelector objc.Selector,
+) core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfItemWithTargetAndAction(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(target),
+		actionSelector.SelectorAddress(),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// IndexOfItemWithTitle returns the index of the item with the specified title.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535406-indexofitemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfItemWithTitle(
+	title string,
+) core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfItemWithTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// InitWithFramePullsDown returns an NSPopUpButton object initialized to the specified dimensions.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1524562-initwithframe?language=objc for details.
+func (x gen_NSPopUpButton) InitWithFramePullsDown(
+	buttonFrame core.NSRect,
+	flag bool,
+) NSPopUpButton {
+	ret := C.NSPopUpButton_inst_InitWithFramePullsDown(
+		unsafe.Pointer(x.Pointer()),
+		*(*C.NSRect)(unsafe.Pointer(&buttonFrame)),
+		convertToObjCBool(flag),
+	)
+
+	return NSPopUpButton_FromPointer(ret)
+}
+
+// InsertItemWithTitleAtIndex inserts an item at the specified position in the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1533750-insertitemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) InsertItemWithTitleAtIndex(
+	title string,
+	index core.NSInteger,
+) {
+	C.NSPopUpButton_inst_InsertItemWithTitleAtIndex(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+		C.long(index),
+	)
+
+	return
+}
+
+// ItemAtIndex returns the menu item at the specified index.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535860-itematindex?language=objc for details.
+func (x gen_NSPopUpButton) ItemAtIndex(
+	index core.NSInteger,
+) NSMenuItem {
+	ret := C.NSPopUpButton_inst_ItemAtIndex(
+		unsafe.Pointer(x.Pointer()),
+		C.long(index),
+	)
+
+	return NSMenuItem_FromPointer(ret)
+}
+
+// ItemTitleAtIndex returns the title of the item at the specified index.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1524908-itemtitleatindex?language=objc for details.
+func (x gen_NSPopUpButton) ItemTitleAtIndex(
+	index core.NSInteger,
+) string {
+	ret := C.NSPopUpButton_inst_ItemTitleAtIndex(
+		unsafe.Pointer(x.Pointer()),
+		C.long(index),
+	)
+
+	return C.GoString(C.createCStringFromNSString(ret))
+}
+
+// ItemWithTitle returns the menu item with the specified title.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1524680-itemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) ItemWithTitle(
+	title string,
+) NSMenuItem {
+	ret := C.NSPopUpButton_inst_ItemWithTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+	)
+
+	return NSMenuItem_FromPointer(ret)
+}
+
+// ObjectValue returns the index of the selected item.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1807212-objectvalue?language=objc for details.
+func (x gen_NSPopUpButton) ObjectValue() objc.Object {
+	ret := C.NSPopUpButton_inst_ObjectValue(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return objc.Object_FromPointer(ret)
+}
+
+// RemoveAllItems removes all items in the receiver’s item menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534430-removeallitems?language=objc for details.
+func (x gen_NSPopUpButton) RemoveAllItems() {
+	C.NSPopUpButton_inst_RemoveAllItems(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return
+}
+
+// RemoveItemAtIndex removes the item at the specified index.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1525241-removeitematindex?language=objc for details.
+func (x gen_NSPopUpButton) RemoveItemAtIndex(
+	index core.NSInteger,
+) {
+	C.NSPopUpButton_inst_RemoveItemAtIndex(
+		unsafe.Pointer(x.Pointer()),
+		C.long(index),
+	)
+
+	return
+}
+
+// RemoveItemWithTitle removes the item with the specified title from the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1530675-removeitemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) RemoveItemWithTitle(
+	title string,
+) {
+	C.NSPopUpButton_inst_RemoveItemWithTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+	)
+
+	return
+}
+
+// SelectItem selects the specified menu item.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1527162-selectitem?language=objc for details.
+func (x gen_NSPopUpButton) SelectItem(
+	item NSMenuItemRef,
+) {
+	C.NSPopUpButton_inst_SelectItem(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(item),
+	)
+
+	return
+}
+
+// SelectItemAtIndex selects the item in the menu at the specified index.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534906-selectitematindex?language=objc for details.
+func (x gen_NSPopUpButton) SelectItemAtIndex(
+	index core.NSInteger,
+) {
+	C.NSPopUpButton_inst_SelectItemAtIndex(
+		unsafe.Pointer(x.Pointer()),
+		C.long(index),
+	)
+
+	return
+}
+
+// SelectItemWithTag selects the menu item with the specified tag.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1528181-selectitemwithtag?language=objc for details.
+func (x gen_NSPopUpButton) SelectItemWithTag(
+	tag core.NSInteger,
+) bool {
+	ret := C.NSPopUpButton_inst_SelectItemWithTag(
+		unsafe.Pointer(x.Pointer()),
+		C.long(tag),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
+// SelectItemWithTitle selects the item with the specified title.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1525666-selectitemwithtitle?language=objc for details.
+func (x gen_NSPopUpButton) SelectItemWithTitle(
+	title string,
+) {
+	C.NSPopUpButton_inst_SelectItemWithTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(title)),
+	)
+
+	return
+}
+
+// SetImage this method has no effect.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1807229-setimage?language=objc for details.
+func (x gen_NSPopUpButton) SetImage(
+	anImage NSImageRef,
+) {
+	C.NSPopUpButton_inst_SetImage(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(anImage),
+	)
+
+	return
+}
+
+// SetObjectValue selects the item at a specific index using an object value.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1807219-setobjectvalue?language=objc for details.
+func (x gen_NSPopUpButton) SetObjectValue(
+	object objc.Ref,
+) {
+	C.NSPopUpButton_inst_SetObjectValue(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(object),
+	)
+
+	return
+}
+
+// SetTitle sets the string displayed in the receiver when the user isn’t pressing the mouse button.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535132-settitle?language=objc for details.
+func (x gen_NSPopUpButton) SetTitle(
+	string string,
+) {
+	C.NSPopUpButton_inst_SetTitle(
+		unsafe.Pointer(x.Pointer()),
+		C.createNSStringFromCString(C.CString(string)),
+	)
+
+	return
+}
+
+// SynchronizeTitleAndSelectedItem ensures that the item being displayed by the receiver agrees with the selected item.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1527124-synchronizetitleandselecteditem?language=objc for details.
+func (x gen_NSPopUpButton) SynchronizeTitleAndSelectedItem() {
+	C.NSPopUpButton_inst_SynchronizeTitleAndSelectedItem(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return
+}
+
+// Init initializes a new instance of the NSPopUpButton class.
+func (x gen_NSPopUpButton) Init() NSPopUpButton {
+	ret := C.NSPopUpButton_inst_Init(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSPopUpButton_FromPointer(ret)
+}
+
+// Init_AsNSPopUpButton is a typed version of Init.
+func (x gen_NSPopUpButton) Init_AsNSPopUpButton() NSPopUpButton {
+	ret := C.NSPopUpButton_inst_Init(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSPopUpButton_FromPointer(ret)
+}
+
+// PullsDown returns a Boolean value indicating whether the button displays a pull-down or pop-up menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1532070-pullsdown?language=objc for details.
+func (x gen_NSPopUpButton) PullsDown() bool {
+	ret := C.NSPopUpButton_inst_PullsDown(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
+// SetPullsDown returns a Boolean value indicating whether the button displays a pull-down or pop-up menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1532070-pullsdown?language=objc for details.
+func (x gen_NSPopUpButton) SetPullsDown(
+	value bool,
+) {
+	C.NSPopUpButton_inst_SetPullsDown(
+		unsafe.Pointer(x.Pointer()),
+		convertToObjCBool(value),
+	)
+
+	return
+}
+
+// AutoenablesItems returns a Boolean value indicating whether the button enables and disables its items every time a user event occurs.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1530543-autoenablesitems?language=objc for details.
+func (x gen_NSPopUpButton) AutoenablesItems() bool {
+	ret := C.NSPopUpButton_inst_AutoenablesItems(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return convertObjCBoolToGo(ret)
+}
+
+// SetAutoenablesItems returns a Boolean value indicating whether the button enables and disables its items every time a user event occurs.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1530543-autoenablesitems?language=objc for details.
+func (x gen_NSPopUpButton) SetAutoenablesItems(
+	value bool,
+) {
+	C.NSPopUpButton_inst_SetAutoenablesItems(
+		unsafe.Pointer(x.Pointer()),
+		convertToObjCBool(value),
+	)
+
+	return
+}
+
+// SelectedItem returns the menu item that was last selected by the user.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1526197-selecteditem?language=objc for details.
+func (x gen_NSPopUpButton) SelectedItem() NSMenuItem {
+	ret := C.NSPopUpButton_inst_SelectedItem(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSMenuItem_FromPointer(ret)
+}
+
+// TitleOfSelectedItem returns the title of the item that was last selected by the user.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534038-titleofselecteditem?language=objc for details.
+func (x gen_NSPopUpButton) TitleOfSelectedItem() string {
+	ret := C.NSPopUpButton_inst_TitleOfSelectedItem(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return C.GoString(C.createCStringFromNSString(ret))
+}
+
+// IndexOfSelectedItem returns the index of the item that was last selected by the user.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534134-indexofselecteditem?language=objc for details.
+func (x gen_NSPopUpButton) IndexOfSelectedItem() core.NSInteger {
+	ret := C.NSPopUpButton_inst_IndexOfSelectedItem(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// SelectedTag returns the tag of the menu item that was last selected by the user.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1577134-selectedtag?language=objc for details.
+func (x gen_NSPopUpButton) SelectedTag() core.NSInteger {
+	ret := C.NSPopUpButton_inst_SelectedTag(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// Menu returns the menu associated with the pop-up button.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535480-menu?language=objc for details.
+func (x gen_NSPopUpButton) Menu() NSMenu {
+	ret := C.NSPopUpButton_inst_Menu(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSMenu_FromPointer(ret)
+}
+
+// SetMenu returns the menu associated with the pop-up button.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535480-menu?language=objc for details.
+func (x gen_NSPopUpButton) SetMenu(
+	value NSMenuRef,
+) {
+	C.NSPopUpButton_inst_SetMenu(
+		unsafe.Pointer(x.Pointer()),
+		objc.RefPointer(value),
+	)
+
+	return
+}
+
+// NumberOfItems returns the number of items in the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1534959-numberofitems?language=objc for details.
+func (x gen_NSPopUpButton) NumberOfItems() core.NSInteger {
+	ret := C.NSPopUpButton_inst_NumberOfItems(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSInteger(ret)
+}
+
+// ItemArray returns the array of menu item objects associated with the button.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535361-itemarray?language=objc for details.
+func (x gen_NSPopUpButton) ItemArray() core.NSArray {
+	ret := C.NSPopUpButton_inst_ItemArray(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSArray_FromPointer(ret)
+}
+
+// ItemTitles an array of strings corresponding to the titles of the items in the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1529271-itemtitles?language=objc for details.
+func (x gen_NSPopUpButton) ItemTitles() core.NSArray {
+	ret := C.NSPopUpButton_inst_ItemTitles(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return core.NSArray_FromPointer(ret)
+}
+
+// LastItem returns the last item in the menu.
+//
+// See https://developer.apple.com/documentation/appkit/nspopupbutton/1535371-lastitem?language=objc for details.
+func (x gen_NSPopUpButton) LastItem() NSMenuItem {
+	ret := C.NSPopUpButton_inst_LastItem(
+		unsafe.Pointer(x.Pointer()),
+	)
+
+	return NSMenuItem_FromPointer(ret)
 }
 
 type NSColorRef interface {
